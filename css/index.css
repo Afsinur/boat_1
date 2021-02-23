@@ -8,6 +8,8 @@
 /*
 1. section1,
 2. section2,
+3. section3,
+4. section4,
 */
 
 /*section1*/
@@ -83,6 +85,12 @@
 .rads1 button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  transition: all 200ms ease-in-out !important;
+}
+
+.rads1 button:hover {
+  background-color: #be192a !important;
+  color: #fff !important;
 }
 
 /*section2*/
@@ -101,9 +109,61 @@
 
 .sec2Sp span h3 {
   color: #fff;
+  font-weight: 350;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.507);
 }
 
 .sec2Sp span p {
-  color: #dedede;
+  color: #eee;
   font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.507);
+}
+
+.sec2Explr {
+  border: 1px solid #999;
+  color: #303030;
+  transition: all 200ms ease-in-out;
+}
+
+.sec2Explr:hover {
+  background-color: #303030;
+  color: #fff;
+}
+
+/*section3*/
+
+.section3 {
+  background-image: url("../img/section3/sec3_bg.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.sec3mk {
+  transition: all 200ms ease-in-out !important;
+}
+
+.sec3mk:hover {
+  background-color: #be192a !important;
+  color: #fff !important;
+}
+
+/*section4*/
+
+.section4 .container h1 {
+  color: #303030;
+}
+
+.section4 .container p {
+  color: #606060;
+}
+
+.fs-6 {
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.507);
+}
+
+.section4 .row span h3 {
+  font-weight: 350;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.507);
 }

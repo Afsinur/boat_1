@@ -14,7 +14,8 @@ const app = {
           {
             src1: "img/section2/sec2_boat_1.jpg",
             alt1: "boat_1",
-            class: "position-relative col-lg-6 mb-lg-0 col-12 mb-3",
+            class:
+              "position-relative col-lg-6 mb-lg-0 col-12 mb-3 d-flex flex-column",
             sp1p1: "730",
             sp2h3: "Figueira da Foz",
             sp2p2: "Portugal",
@@ -22,7 +23,8 @@ const app = {
           {
             src1: "img/section2/sec2_boat_2.jpg",
             alt1: "boat_2",
-            class: "position-relative col-lg-3 mb-lg-0 col-12 mb-3",
+            class:
+              "position-relative col-lg-3 mb-lg-0 col-12 mb-3 d-flex flex-column",
             sp1p1: "621",
             sp2h3: "Ibiza",
             sp2p2: "Spain",
@@ -32,7 +34,8 @@ const app = {
           {
             src1: "img/section2/sec2_boat_3.jpg",
             alt1: "boat_3",
-            class: "position-relative col-lg-3 mb-lg-0 col-12 mb-3",
+            class:
+              "position-relative col-lg-3 mb-lg-0 col-12 mb-3 d-flex flex-column",
             sp1p1: "543",
             sp2h3: "Palma de Mallorca",
             sp2p2: "Spain",
@@ -40,7 +43,8 @@ const app = {
           {
             src1: "img/section2/sec2_boat_4.jpg",
             alt1: "boat_4",
-            class: "position-relative col-lg-3 mb-lg-0 col-12 mb-3",
+            class:
+              "position-relative col-lg-3 mb-lg-0 col-12 mb-3 d-flex flex-column",
             sp1p1: "495",
             sp2h3: "Portofino",
             sp2p2: "Italy",
@@ -48,10 +52,49 @@ const app = {
           {
             src1: "img/section2/sec2_boat_5.jpg",
             alt1: "boat_5",
-            class: "position-relative col-lg-3 mb-lg-0 col-12 mb-3",
+            class:
+              "position-relative col-lg-3 mb-lg-0 col-12 mb-3 d-flex flex-column",
             sp1p1: "402",
             sp2h3: "Port Hercules",
             sp2p2: "Monaco",
+          },
+        ],
+      },
+      section4: {
+        info1: [
+          {
+            src1: "img/section4/sec4_boat_1.jpg",
+            alt1: "boat_1",
+            sp1p1: "$580 / day",
+            sp2h3: "Delphia 47",
+            sp2sp1: "Gdansk, Poland",
+            sp2sp2: "8 Berths",
+          },
+          {
+            src1: "img/section4/sec4_boat_2.jpg",
+            alt1: "boat_2",
+            sp1p1: "$950 / day",
+            sp2h3: "Sense 55",
+            sp2sp1: "Portofino, Italy",
+            sp2sp2: "12 Berths",
+          },
+        ],
+        info2: [
+          {
+            src1: "img/section4/sec4_boat_3.jpg",
+            alt1: "boat_3",
+            sp1p1: "$820 / day",
+            sp2h3: "Crusier 51",
+            sp2sp1: "Palma de Mallorca, Spain",
+            sp2sp2: "12 Berths",
+          },
+          {
+            src1: "img/section4/sec4_boat_4.jpg",
+            alt1: "boat_4",
+            sp1p1: "$950 / day",
+            sp2h3: "Crusier 41S",
+            sp2sp1: "Lisbon, Portugal",
+            sp2sp2: "8 Berths",
           },
         ],
       },
