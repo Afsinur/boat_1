@@ -10,9 +10,14 @@
 2. section2,
 3. section3,
 4. section4,
+5. section5,
 */
 
 /*section1*/
+
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: 500 !important;
+}
 
 .section1 {
   background-image: url("../img/section1/sec1_bg.jpg");
@@ -166,4 +171,49 @@
 .section4 .row span h3 {
   font-weight: 350;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.507);
+}
+
+/*section5*/
+
+.section5 {
+  background-color: #313131;
+}
+
+.section5 .container ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.section5 .container ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.section5 .container ul li a:hover {
+  color: #aaa;
+}
+
+.section5 .container h5 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.section5 .container ul li a img:hover {
+  filter: brightness(0.75);
+}
+
+.section5 .container form input[type="text"] {
+  border: none;
+}
+
+.section5 .container form input[type="submit"] {
+  border: none;
+  color: #fff;
+  transition: all 200ms ease-in-out !important;
+}
+
+.section5 .container form input[type="submit"]:hover {
+  background-color: #be192a !important;
+  color: #fff !important;
 }
