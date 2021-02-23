@@ -5,6 +5,13 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/*
+1. section1,
+2. section2,
+*/
+
+/*section1*/
+
 .section1 {
   background-image: url("../img/section1/sec1_bg.jpg");
   width: 100%;
@@ -31,29 +38,72 @@
 .sec1_form button {
   background-color: hsl(356deg 77% 58%);
   color: #efefef;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.sec1_form input {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 .bottomHeader {
-  bottom: 10px;
-  background-color: #fff;
   border-radius: 5px;
 }
 
 .bottomHeader > div {
-  border-right: 1px solid #ddd;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.109);
 }
 
-.bottomHeader > div:last-child {
-  border-right: none;
+.bottomHeader > div > h2 {
+  color: #303030;
 }
 
 .bottomHeader > div > p {
   color: #999;
+}
+
+.bottomHeaderTrans1 > div:last-child {
+  border: none !important;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bottomHeaderTrans1 > div:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.bottomHeaderTrans1 {
+  transform: translateY(50%);
+}
+
+.bottomHeaderTrans2 div {
+  flex-grow: 1;
+}
+
+.rads1 input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.rads1 button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/*section2*/
+
+.section2 .container img {
+  width: 100%;
+}
+
+.section2 h2 {
+  color: #303030;
+}
+
+.section2 p {
+  color: #606060;
+}
+
+.sec2Sp span h3 {
+  color: #fff;
+}
+
+.sec2Sp span p {
+  color: #dedede;
+  font-weight: 500;
 }

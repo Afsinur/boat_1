@@ -22,6 +22,7 @@
   </head>
   <body>
     <div id="app">
+      <!-- section1 -->
       <div class="section1">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -64,7 +65,7 @@
 
         <!-- RESERVE A BOAT NOW -->
         <div
-          class="underNav d-flex flex-column align-content-center align-items-center justify-content-center"
+          class="position-relative underNav d-flex flex-column align-content-center align-items-center justify-content-center"
         >
           <h1 class="display-1 mt-5 pt-5">RESERVE A BOAT NOW</h1>
 
@@ -73,17 +74,17 @@
           <form
             action="/"
             method="get"
-            class="sec1_form mt-2 mb-5 p-5 w-100 d-flex flex-md-row flex-column justify-content-center"
+            class="container sec1_form rads1 mt-2 mb-5 p-5 d-md-flex d-none flex-md-row flex-column justify-content-center"
           >
             <input
               type="text"
-              placeholder="WHAT IS YOUR DESTINATION SAILOR?"
-              class="w-50"
+              placeholder="WHAT IS YOUR DESTINATION, SAILOR?"
+              class="flex-grow-1"
             />
 
             <button
               type="submit"
-              class="mw-25 d-flex flex-row justify-content-center align-items-center"
+              class="d-flex flex-row justify-content-center align-items-center flex-nowrap"
             >
               <img
                 src="img/section1/small boat.png"
@@ -91,20 +92,120 @@
                 class="p-2"
               />
 
-              <span class="p-2">FIND A BOAT</span>
+              <span class="p-2 text-nowrap">FIND A BOAT</span>
+            </button>
+          </form>
+
+          <form
+            action="/"
+            method="get"
+            class="container sec1_form mt-2 mb-5 p-5 d-md-none d-flex flex-md-row flex-column justify-content-center"
+          >
+            <input
+              type="text"
+              placeholder="WHAT IS YOUR DESTINATION, SAILOR?"
+              class="flex-grow-1"
+            />
+
+            <button
+              type="submit"
+              class="d-flex flex-row justify-content-center align-items-center flex-nowrap"
+            >
+              <img
+                src="img/section1/small boat.png"
+                alt="small boat"
+                class="p-2"
+              />
+
+              <span class="p-2 text-nowrap">FIND A BOAT</span>
             </button>
           </form>
 
           <div
-            class="bottomHeader p-2 position-absolute d-flex flex-row align-items-center justify-content-center align-content-center"
+            class="container p-0 bottomHeader bottomHeaderTrans1 position-relative d-md-flex d-none flex-md-nowrap flex-wrap flex-row align-items-center justify-content-center"
           >
             <div
               v-for="(item, index) in section1.bottomHeader"
               :key="index"
-              class="px-5 my-2"
+              class="px-5 py-3 border-end text-center bg-light"
             >
-              <h2>{{ item.h2 }}</h2>
-              <p>{{ item.p }}</p>
+              <h2 class="px-lg-4">{{ item.h2 }}</h2>
+              <p class="mb-0">{{ item.p }}</p>
+            </div>
+          </div>
+
+          <div
+            class="container p-0 bottomHeader bottomHeaderTrans2 position-relative d-md-none d-flex flex-md-nowrap flex-wrap flex-row align-items-center justify-content-center"
+          >
+            <div
+              v-for="(item, index) in section1.bottomHeader"
+              :key="index"
+              class="px-5 py-3 border-end text-center bg-light"
+            >
+              <h2 class="px-lg-4">{{ item.h2 }}</h2>
+              <p class="mb-0">{{ item.p }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section2 -->
+      <div
+        class="section2 container pt-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="display-6 pt-2 mt-2 text-center">
+          EXPLORE OUR TOP DESTINATIONS
+        </h1>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          beatae, dolorum nesciunt eveniet architecto maiores. Nemo!
+        </p>
+
+        <div class="sec2Sp row my-5">
+          <div class="my-lg-2 m-0 p-0 row col-12 justify-content-lg-center">
+            <div
+              v-for="(item, index) in section2.info1"
+              :key="index"
+              :class="item.class"
+            >
+              <img :src="item.src1" class="img-fluid" :alt="item.alt1" />
+
+              <span
+                class="rounded bg-danger position-absolute top-0 start-0 ms-4 mt-2 ps-2 d-flex flex-row justify-content-center align-items-center align-content-center"
+              >
+                <img src="img/section1/small boat.png" alt="small boat" />
+                <p class="m-2">{{ item.sp1p1 }}</p>
+              </span>
+
+              <span class="position-absolute bottom-0 start-0 ps-4">
+                <h3>{{ item.sp2h3 }}</h3>
+
+                <p class="">{{ item.sp2p2 }}</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="my-lg-2 m-0 p-0 row col-12 justify-content-lg-center">
+            <div
+              v-for="(item, index) in section2.info2"
+              :key="index"
+              :class="item.class"
+            >
+              <img :src="item.src1" class="img-fluid" :alt="item.alt1" />
+
+              <span
+                class="rounded bg-danger position-absolute top-0 start-0 ms-4 mt-2 ps-2 d-flex flex-row justify-content-center align-items-center align-content-center"
+              >
+                <img src="img/section1/small boat.png" alt="small boat" />
+                <p class="m-2">{{ item.sp1p1 }}</p>
+              </span>
+
+              <span class="position-absolute bottom-0 start-0 ps-4">
+                <h3>{{ item.sp2h3 }}</h3>
+
+                <p class="">{{ item.sp2p2 }}</p>
+              </span>
             </div>
           </div>
         </div>
