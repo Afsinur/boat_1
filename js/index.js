@@ -9,7 +9,7 @@ const app = {
 
   methods: {
     loadAll() {
-      fetch("../js/json/index.json")
+      fetch("../js/json/sections.json")
         .then((response) => {
           return response.json();
         })
